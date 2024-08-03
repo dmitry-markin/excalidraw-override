@@ -26641,8 +26641,8 @@ function VO(e) {
     const t = e.simulatePressure ? e.points : e.points.length ? e.points.map(([r,i],o)=>[r, i, e.pressures[o]]) : [[0, 0, .5]]
       , n = {
         simulatePressure: e.simulatePressure,
-        size: e.strokeWidth * 4.25,
-        thinning: .6,
+        size: e.strokeWidth * .9,
+        thinning: .2,
         smoothing: .5,
         streamline: .5,
         easing: r=>Math.sin(r * Math.PI / 2),
